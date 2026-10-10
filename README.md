@@ -29,7 +29,7 @@ Run in a terminal on the target Omarchy PC:
 
 ```bash
 omarchy plugin add https://github.com/Migleve/omarchy-omp-voice.git --enable --yes
-python3 "${XDG_CONFIG_HOME:-$HOME/.config}/omarchy/plugins/migleve.omp-voice/scripts/setup.py"
+python3 "$HOME/.config/omarchy/plugins/migleve.omp-voice/scripts/setup.py"
 ```
 
 Both steps are necessary: Omarchy's plugin manager deliberately never executes
@@ -42,7 +42,7 @@ No credentials or chat history are stored in this repository or copied between P
 To change the shortcut, rerun setup:
 
 ```bash
-python3 "${XDG_CONFIG_HOME:-$HOME/.config}/omarchy/plugins/migleve.omp-voice/scripts/setup.py" --shortcut 'SUPER + ALT + O'
+python3 "$HOME/.config/omarchy/plugins/migleve.omp-voice/scripts/setup.py" --shortcut 'SUPER + ALT + O'
 ```
 
 Setup refuses to overwrite another application's shortcut. It adds only a marked
@@ -71,14 +71,14 @@ agents. If you customized OMP's live keybinding, restore `Ctrl+L` or adjust
 
 ```bash
 omarchy plugin update migleve.omp-voice --yes
-python3 "${XDG_CONFIG_HOME:-$HOME/.config}/omarchy/plugins/migleve.omp-voice/scripts/setup.py"
+python3 "$HOME/.config/omarchy/plugins/migleve.omp-voice/scripts/setup.py"
 ```
 
 Use the same `--shortcut` if you customized it. To remove, close voice first:
 
 ```bash
 ~/.local/bin/omp-voice --close
-python3 "${XDG_CONFIG_HOME:-$HOME/.config}/omarchy/plugins/migleve.omp-voice/scripts/setup.py" --uninstall
+python3 "$HOME/.config/omarchy/plugins/migleve.omp-voice/scripts/setup.py" --uninstall
 omarchy plugin remove migleve.omp-voice --yes
 ```
 
