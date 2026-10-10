@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "migleve.omp-voice",
+  "name": "OMP Voice",
+  "version": "0.1.0",
+  "author": "Migleve",
+  "license": "MIT",
+  "description": "A floating Herdr terminal for Oh My Pi live voice, dismissed by an outside click.",
+  "kinds": ["panel"],
+  "keepLoaded": true,
+  "entryPoints": { "panel": "Voice.qml" }
+}
